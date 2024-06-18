@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(images/background\ video.svg);
+            
+        }
+
+ 
+        header {
+            background-image: url(images/newyork.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        nav {
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(150, 140, 140);
+        }
+
+        main {
+            margin-top: 120px;
+            display: flex;
+            align-items: flex-start;
+            margin: 30px;
+            border-radius: 9px;
+            justify-content: center;
+            
+            
+        }
+
+        .box {
+            margin: 10px 40px;
+            width: calc(33% - 20px); 
+            background-color: rgb(51, 51, 51);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 25px;
+            border-radius: 19px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 768px){
+        body{
+            font-size: larger;
+        } 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-weight: bold;">Assignment Styling</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="task2.html">task2</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="box">100</div>
+        <div class="box">100</div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
